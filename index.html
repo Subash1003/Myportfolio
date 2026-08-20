@@ -48,10 +48,18 @@
 
                 <a href="#about">About</a>
                 <a href="#work">Projects</a>
+                <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
 
             </div>
+
+            <a
+                href="assets/resume.pdf"
+                class="resume-btn resume-desktop"
+                download="Subash_V_Resume.pdf">
+                Resume <span>↓</span>
+            </a>
 
             <button
                 class="menu-btn"
@@ -358,11 +366,8 @@
                 </div>
 
                 <p class="section-note">
-
-                    A selection of projects showcasing
-                    frontend development, performance
-                    optimization and Java development.
-
+                    A selection of projects showcasing frontend development,
+                    performance optimization and Java development.
                 </p>
 
             </div>
@@ -373,11 +378,7 @@
 
                 <!-- PROJECT 1 -->
 
-                <a
-                    href="https://gen-x-ai-two.vercel.app"
-                    target="_blank"
-                    rel="noopener"
-                    class="project reveal">
+                <article class="project reveal">
 
                     <div class="project-number">
                         01
@@ -385,16 +386,32 @@
 
                     <div class="project-content">
 
-                        <h3 class="project-title">
-                            GenX-AI
-                        </h3>
+                        <div class="project-heading-row">
+
+                            <div>
+
+                                <h3 class="project-title">
+                                    GenX-AI
+                                </h3>
+
+                                <p class="project-subtitle">
+                                    Text-Based LLM Application
+                                </p>
+
+                            </div>
+
+                            <div class="project-meta">
+                                LCP<br>
+                                <strong>1000ms → 400ms</strong>
+                            </div>
+
+                        </div>
 
                         <p class="project-description">
-
-                            Text-based LLM application with
-                            a focus on frontend performance
-                            and fast rendering.
-
+                            A conversational AI web application built with React.js
+                            and an LLM API. It can answer questions, generate text,
+                            translate and summarize content while maintaining a
+                            responsive and intuitive chat experience.
                         </p>
 
                         <div class="project-tags">
@@ -405,29 +422,23 @@
 
                         </div>
 
-                    </div>
-
-                    <div class="project-meta">
-
-                        LCP<br>
-                        1000ms → 400ms
-
-                        <span class="project-arrow">
-                            ↗
-                        </span>
+                        <a
+                            href="https://gen-x-ai-two.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="live-demo-btn">
+                            Live Demo
+                            <span>↗</span>
+                        </a>
 
                     </div>
 
-                </a>
+                </article>
 
 
                 <!-- PROJECT 2 -->
 
-                <a
-                    href="https://meal-mate-pied.vercel.app"
-                    target="_blank"
-                    rel="noopener"
-                    class="project reveal">
+                <article class="project reveal">
 
                     <div class="project-number">
                         02
@@ -435,16 +446,31 @@
 
                     <div class="project-content">
 
-                        <h3 class="project-title">
-                            MealMate
-                        </h3>
+                        <div class="project-heading-row">
+
+                            <div>
+
+                                <h3 class="project-title">
+                                    MealMate
+                                </h3>
+
+                                <p class="project-subtitle">
+                                    Food Ordering Web Application
+                                </p>
+
+                            </div>
+
+                            <div class="project-meta">
+                                <strong>Web App</strong>
+                            </div>
+
+                        </div>
 
                         <p class="project-description">
-
-                            Modern food ordering platform
-                            inspired by real-world food
-                            delivery applications.
-
+                            A responsive food-ordering platform inspired by modern
+                            delivery applications. Users can browse restaurants,
+                            explore detailed menus, search for items and manage
+                            their cart using React.js and Redux.
                         </p>
 
                         <div class="project-tags">
@@ -455,24 +481,23 @@
 
                         </div>
 
+                        <a
+                            href="https://meal-mate-pied.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="live-demo-btn">
+                            Live Demo
+                            <span>↗</span>
+                        </a>
+
                     </div>
 
-                    <div class="project-meta">
-
-                        Web App
-
-                        <span class="project-arrow">
-                            ↗
-                        </span>
-
-                    </div>
-
-                </a>
+                </article>
 
 
                 <!-- PROJECT 3 -->
 
-                <div class="project reveal">
+                <article class="project reveal">
 
                     <div class="project-number">
                         03
@@ -480,17 +505,33 @@
 
                     <div class="project-content">
 
-                        <h3 class="project-title">
-                            Online Shopping
-                            Management System
-                        </h3>
+                        <div class="project-heading-row">
+
+                            <div>
+
+                                <h3 class="project-title">
+                                    Online Shopping
+                                    Management System
+                                </h3>
+
+                                <p class="project-subtitle">
+                                    Java Console Application
+                                </p>
+
+                            </div>
+
+                            <div class="project-meta">
+                                <strong>Java + MySQL</strong>
+                            </div>
+
+                        </div>
 
                         <p class="project-description">
-
-                            Console-based shopping management
-                            system implementing authentication,
-                            product management and order processing.
-
+                            A Java-based shopping management system with
+                            role-specific Admin and Customer workflows.
+                            It includes authentication, product catalog,
+                            cart and order processing, with MySQL integration
+                            through JDBC.
                         </p>
 
                         <div class="project-tags">
@@ -502,13 +543,13 @@
 
                         </div>
 
+                        <span class="project-status">
+                            Console Project
+                        </span>
+
                     </div>
 
-                    <div class="project-meta">
-                        Console App
-                    </div>
-
-                </div>
+                </article>
 
             </div>
 
@@ -550,6 +591,150 @@
     </section>
 
 
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="section" id="education">
+
+        <div class="wrap">
+
+            <div class="section-head reveal">
+
+                <div>
+
+                    <div class="section-label">
+                        03 — Education
+                    </div>
+
+                    <h2 class="section-title">
+                        Academic journey.
+                    </h2>
+
+                </div>
+
+                <p class="section-note">
+                    A foundation in Information Technology,
+                    programming fundamentals and database systems.
+                </p>
+
+            </div>
+
+
+            <div class="education-list">
+
+                <article class="education-card reveal">
+
+                    <div class="education-year">
+                        2021 — 2025
+                    </div>
+
+                    <div class="education-content">
+
+                        <div class="education-top">
+
+                            <div>
+
+                                <h3>
+                                    B.Tech — Information Technology
+                                </h3>
+
+                                <p class="education-institute">
+                                    Sri Shakthi Institute of Engineering
+                                    and Technology, Coimbatore
+                                </p>
+
+                            </div>
+
+                            <span class="education-result">
+                                FIRST CLASS
+                            </span>
+
+                        </div>
+
+                        <p class="education-description">
+                            Completed B.Tech in Information Technology
+                            with a focus on software development,
+                            programming, databases and web technologies.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="education-card reveal">
+
+                    <div class="education-year">
+                        2021
+                    </div>
+
+                    <div class="education-content">
+
+                        <div class="education-top">
+
+                            <div>
+
+                                <h3>
+                                    Higher Secondary — Class XII
+                                </h3>
+
+                                <p class="education-institute">
+                                    Sri VRV Matric Higher Secondary School,
+                                    Tirupattur
+                                </p>
+
+                            </div>
+
+                            <span class="education-result">
+                                86%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="education-card reveal">
+
+                    <div class="education-year">
+                        2019
+                    </div>
+
+                    <div class="education-content">
+
+                        <div class="education-top">
+
+                            <div>
+
+                                <h3>
+                                    Secondary — Class X
+                                </h3>
+
+                                <p class="education-institute">
+                                    Sri VRV Matric Higher Secondary School,
+                                    Tirupattur
+                                </p>
+
+                            </div>
+
+                            <span class="education-result">
+                                82%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- ================= SKILLS ================= -->
 
     <section class="section" id="skills">
@@ -561,7 +746,7 @@
                 <div>
 
                     <div class="section-label">
-                        03 — Capabilities
+                        04 — Capabilities
                     </div>
 
                     <h2 class="section-title">
@@ -717,7 +902,7 @@
             <div class="reveal">
 
                 <div class="section-label">
-                    04 — Contact
+                    05 — Contact
                 </div>
 
                 <h2 class="contact-title">

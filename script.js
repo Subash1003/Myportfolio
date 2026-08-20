@@ -9,6 +9,8 @@ const navLinks =
     document.getElementById("navLinks");
 
 
+if (menuBtn && navLinks) {
+
 menuBtn.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
@@ -41,6 +43,8 @@ document
         });
 
     });
+
+}
 
 
 /* =========================================================
@@ -195,7 +199,7 @@ if (
 
     document
         .querySelectorAll(
-            "a, button, .project, .cap-card"
+            "a, button, .project, .cap-card, .live-demo-btn, .resume-btn"
         )
         .forEach(element => {
 

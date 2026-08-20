@@ -1655,3 +1655,457 @@ footer {
     }
 
 }
+
+/* =========================================================
+   RESUME BUTTON
+========================================================= */
+
+.resume-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 13px;
+
+    border: 1px solid rgba(210,154,75,.45);
+
+    border-radius: 8px;
+
+    background: rgba(210,154,75,.08);
+
+    color: var(--accent) !important;
+
+    font-family: var(--mono);
+
+    font-size: 10px !important;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        border-color .3s ease;
+}
+
+.resume-btn:hover {
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: #17120d !important;
+
+    transform: translateY(-2px);
+}
+
+.resume-btn::after {
+    display: none !important;
+}
+
+.resume-desktop {
+    margin-left: 20px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PROJECT CARDS — DESCRIPTION + LIVE DEMO
+========================================================= */
+
+.project {
+    grid-template-columns: 55px minmax(0, 1fr);
+
+    align-items: start;
+
+    gap: 25px;
+
+    padding: 32px 35px;
+}
+
+.project-content {
+    min-width: 0;
+}
+
+.project-heading-row {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.project-subtitle {
+    margin-top: 4px;
+
+    font-family: var(--mono);
+
+    font-size: 10px;
+
+    letter-spacing: .07em;
+
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+.project-description {
+    max-width: 800px;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+.project-meta {
+    min-width: 130px;
+
+    padding-top: 5px;
+
+    text-align: right;
+
+    font-family: var(--mono);
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+
+    color: var(--faint);
+}
+
+.project-meta strong {
+    color: var(--muted);
+
+    font-weight: 400;
+}
+
+.project .project-tags {
+    margin-top: 18px;
+}
+
+.live-demo-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    padding: 10px 15px;
+
+    border: 1px solid rgba(210,154,75,.35);
+
+    border-radius: 8px;
+
+    background: rgba(210,154,75,.06);
+
+    color: var(--accent);
+
+    font-family: var(--mono);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        color .3s ease;
+}
+
+.live-demo-btn:hover {
+    transform: translateY(-3px);
+
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: #17120d;
+}
+
+.live-demo-btn span {
+    transition: transform .3s ease;
+}
+
+.live-demo-btn:hover span {
+    transform: translate(2px, -2px);
+}
+
+.project-status {
+    display: inline-flex;
+
+    margin-top: 22px;
+
+    padding: 9px 13px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 8px;
+
+    color: var(--faint);
+
+    font-family: var(--mono);
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.education-card {
+    display: grid;
+
+    grid-template-columns: 150px minmax(0, 1fr);
+
+    gap: 35px;
+
+    padding: 32px 35px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.025),
+            rgba(255,255,255,.008)
+        );
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        box-shadow .4s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--line-hover);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.28);
+}
+
+.education-year {
+    padding-top: 4px;
+
+    font-family: var(--mono);
+
+    font-size: 10px;
+
+    letter-spacing: .08em;
+
+    color: var(--accent);
+}
+
+.education-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.education-content h3 {
+    font-family: var(--serif);
+
+    font-size: 27px;
+
+    line-height: 1.25;
+
+    font-weight: 400;
+}
+
+.education-institute {
+    margin-top: 8px;
+
+    font-size: 13px;
+
+    color: var(--muted);
+}
+
+.education-result {
+    flex-shrink: 0;
+
+    padding: 7px 10px;
+
+    border: 1px solid rgba(210,154,75,.22);
+
+    border-radius: 100px;
+
+    font-family: var(--mono);
+
+    font-size: 9px;
+
+    letter-spacing: .08em;
+
+    color: var(--accent);
+}
+
+.education-description {
+    max-width: 700px;
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   RESPONSIVE — UPDATED NAV + PROJECTS + EDUCATION
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .resume-desktop {
+        margin-left: 12px;
+    }
+
+    .project-heading-row {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .project-meta {
+        text-align: left;
+
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .resume-desktop {
+        display: none;
+    }
+
+    .nav-inner {
+        position: relative;
+    }
+
+    .nav-links {
+        padding-bottom: 12px;
+    }
+
+    .nav-links .resume-btn {
+        display: inline-flex;
+
+        width: fit-content;
+
+        margin: 8px 10px 0;
+    }
+
+    .education-card {
+        grid-template-columns: 110px minmax(0, 1fr);
+
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .project {
+        grid-template-columns: 35px minmax(0, 1fr);
+
+        gap: 15px;
+
+        padding: 25px 20px;
+    }
+
+    .project-description {
+        font-size: 13px;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 25px 20px;
+    }
+
+    .education-year {
+        padding-top: 0;
+    }
+
+    .education-content h3 {
+        font-size: 24px;
+    }
+
+    .education-top {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .education-result {
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .project {
+        padding: 22px 18px;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .live-demo-btn,
+    .project-status {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+}
