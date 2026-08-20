@@ -836,8 +836,9 @@ nav.scrolled {
 
     justify-content: space-between;
 
-    padding: 25px 0;
+    padding: 12px 0;
 
+    
     border-bottom:
         1px solid var(--line);
 }
